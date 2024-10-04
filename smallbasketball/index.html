@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="basketball.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+      <button class="Hotspot" slot="hotspot-2" data-position="-2.4475705690824676m 1.1983905523314349m 0.01628162440138358m" data-normal="0.03560889330698417m -0.9347418477917655m -0.35353880226120554m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">hole</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-2.430457682095013m 1.3346221145409047m -0.04390831826235149m" data-normal="0.18176717168783854m 0.3153595358648998m -0.9314016633202234m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">商標</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<model-viewer src="tmps77qgb1u.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+    <button class="Hotspot" slot="hotspot-1" data-position="0.004786613360356029m 0.34170430813799174m 0.022352334589188443m" data-normal="0.13306434456124258m -0.5612854933901288m 0.8168552351036789m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">BASKETBALL</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
